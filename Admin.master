@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+<html>
+<head id="Head1" runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Pride of Sangli</title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/animate.min.css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head><!--/head-->
+
+<body class="homepage">
+<form id="Form1" runat="server">
+
+    <header id="header">
+       <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number">
+                        <asp:Label ID="Label2" runat="server" Text="Welcome :"></asp:Label>
+                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                             </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                         <!--<asp:HyperLink ID="h2" runat="server" NavigateUrl="~/MAdmin.aspx">मराठी</asp:HyperLink><asp:Label ID="l1" 
+                               runat="server" Text="/" ForeColor="White"></asp:Label><asp:HyperLink ID="h3" runat="server" NavigateUrl="~/Admin.aspx">English</asp:HyperLink>-->
+                           <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="btn_click" ForeColor="#FF3300" BackColor="Black" />
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <li><a class="navbar-brand" href="Home.aspx"> Pride of Sangli</a></li>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Home.aspx">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personality Category <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="politics.aspx">Politics</a></li>
+                                <li><a href="Sports.aspx">Sports</a></li>
+                                <li><a href="Social_Reform.aspx">Social Reformer</a></li>
+                                 <li><a href="Bussiness.aspx">Bussiness</a></li>
+                                   <li><a href="Agriculture.aspx">Agriculture</a></li>
+                                       <li><a href="Education.aspx">Education</a></li>
+                                        <li><a href="Litratures.aspx">Litratures</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Information<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="add.aspx">Add information</a></li>
+                                <li><a href="update.aspx">Update information</a></li>
+                                <li><a href="delete.aspx">Delete information</a></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Awards<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Pb.aspx">Padmabhushan</a></li>
+                                <li><a href="Ps.aspx">Padmashree</a></li>
+                                <li><a href="Kr.aspx">Krushiratna</a></li>
+                                <li><a href="Kb.aspx">Krushibhushan</a></li>
+                                 
+                            </ul>
+                            </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cultural<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Musician.aspx">Singer</a></li>
+                                <!--<li><a href="Cultural.aspx">Dancer</a></li>-->
+                                <li><a href="Actors_Actress.aspx">Acter And Actercess</a></li>
+                                <li><a href="Artist.aspx">Artist</a></li>
+                                 
+                            </ul>
+                            </li>
+                        <li><a href="About.aspx">About Us</a></li>
+                        <li><a href="Contact Us.aspx">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+    <div id="main">
+      <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    </div>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 ADCET(BY IT/ETC). All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="About.aspx">About Us</a></li>
+                        <li><a href="Contact Us.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    </form>
+</body>
+</html>

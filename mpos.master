@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mpos.master.cs" Inherits="pos" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pride Of Sangli</title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->  
+     <link href="Design/scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />  
+    <link href="Design/scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" href="Design/scripts/fontawesome/css/font-awesome.min.css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link href="Design/styles/custom.css" rel="stylesheet" type="text/css" />     
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head><!--/head-->
+
+<body class="homepage">
+<form runat="server">
+
+    <header id="header">
+
+
+         <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>Login As</p>
+                            <asp:HyperLink ID="h1" runat="server" NavigateUrl="~/MLogin.aspx">Adminstrator</asp:HyperLink> </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                         <asp:HyperLink ID="h2" runat="server" NavigateUrl="~/MHome.aspx">मराठी</asp:HyperLink><asp:Label ID="l1" 
+                               runat="server" Text="/" ForeColor="White"></asp:Label><asp:HyperLink ID="h3" runat="server" NavigateUrl="~/Home.aspx">English</asp:HyperLink>
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+       
+                    <li><a class="navbar-brand" href="Home.aspx"> अभिमान सांगलीचा </a></li>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="MHome.aspx">मुख्यपृष्ठ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">व्यक्तिमत्व वर्ग<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Mpolitics.aspx">राजकारण </a></li>
+                                <li><a href="MSports.aspx">क्रीडा</a></li>
+                                <li><a href="MSocial_Reform.aspx">समाजसुधारक</a></li>
+                                 <li><a href="MBussiness.aspx">व्यवसाय</a></li>
+                                <li><a href="MAgree.aspx">शेतीविषयक </a></li>
+                                <li><a href="MEducation.aspx">शैक्षणिक </a></li>
+                                <li><a href="MLiterature.aspx">साहित्यिक</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">पूरस्कार<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Mpadmabhushan.aspx">पद्मभूषण </a></li>
+                                <li><a href="Mpadmashree.aspx">पद्मश्री </a></li>
+                                <li><a href="Mkrushiratna.aspx">क्रुषिरत्न</a></li>
+                                <li><a href="Mkrushibhushan.aspx">क्रुषिभूषण</a></li>
+                                 
+                            </ul>
+                        </li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">सांस्कृतिक<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="MMusician.aspx">संगीतकार </a></li>
+                                <li><a href="Mactor_actress.aspx">अभिनेता आणि अभिनेत्री  </a></li>
+                                <li><a href="Martist.aspx">कलाकार</a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="MAbout.aspx">वेबसाईटबद्दल </a></li>
+                        <li><a href="MContact Us.aspx">संपर्क</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+                <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 ADCET(BY IT/ETC). All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="MHome.aspx">मुख्यपृष्ठ</a></li>
+                        <li><a href="MAbout.aspx">वेबसाईटबद्दल</a></li>
+                        <li><a href="MContact Us.aspx">संपर्क</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    </form>
+</body>
+</html>
+
